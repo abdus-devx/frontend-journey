@@ -12,3 +12,10 @@ p {
     color: #333;
     line-height: 1.6;
 }
+
+section {
+    background: white;
+    padding: 40px;
+    margin: 50px;
+    border-radius: 8px;
+}
