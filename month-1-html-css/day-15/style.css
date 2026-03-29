@@ -1,9 +1,29 @@
 .container {
     display: flex;
+    flex-direction: row-reverse;
 }
 
-.box {
+.box1 {
     background: lightblue;
     padding: 40px;
     margin: 10px;
+    
+}
+.box2 {
+    background: rgb(6, 49, 63);
+    padding: 40px;
+    margin: 10px;
+    color: white;
+}
+.box3 {
+    background: rgb(92, 45, 1);
+    padding: 40px;
+    margin: 10px;
+    color: white;
+}
+.box4 {
+    background: rgb(134, 20, 5);
+    padding: 40px;
+    margin: 10px;
+    color: white;
 }
