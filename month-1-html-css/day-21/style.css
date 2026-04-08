@@ -2,12 +2,17 @@ body {
     background: black;
     color: white;
 }
-
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+.header-inner {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
+    
 }
 
 .logo {
@@ -30,6 +35,9 @@ a {
 
 .hero {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
 }
 .img-hero {
     width: 200px;
