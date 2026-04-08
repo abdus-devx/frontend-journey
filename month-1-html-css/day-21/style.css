@@ -1,6 +1,7 @@
 body {
     background: black;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
     max-width: 1200px;
@@ -14,10 +15,26 @@ body {
     align-items: center;
     
 }
-
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+}
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 45%;
+    width: 32px;
+    height: 32px;
+    background-color: #00FF41;
+    color: black;
+    font-weight: bold;
+    border-style: hidden;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-list {
@@ -31,6 +48,14 @@ body {
 a {
     text-decoration: none;
     color: white;
+    padding: 5px;
+}
+a:hover {
+    background-color: #00FF41;
+    color: black;
+    transition: 0.5ms;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .hero {
