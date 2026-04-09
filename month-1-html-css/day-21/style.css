@@ -25,15 +25,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 45%;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background-color: #00FF41;
     color: black;
     font-weight: bold;
     border-style: hidden;
-    font-size: 22px;
+    font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -63,7 +62,50 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 16px;
+    padding: 60px 0;
+}
+.hero-left {
+    max-width: 600px;
+}
+.hero-left h1 {
+ font-size: 62px;
+}
+.hero-left h2 {
+ font-size: 42px;
+ color: #00FF41;
+}
+.hero-left p {
+    margin: 16px 0 24px;
+}
+
+button {
+    background-color: #00FF41;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc33;
+}
+.imgs-hero {
+ position:relative ;
 }
 .img-hero {
-    width: 200px;
+    width: 100%;
+    max-width: 400px;
+    filter: drop-shadow(0 0 10px #00ff41);
+}
+.circle {
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+    border-radius: 50%;
+    position:absolute;
+    z-index: -1;
+    top: 346px;
+
 }
