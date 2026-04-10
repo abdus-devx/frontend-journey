@@ -8,6 +8,8 @@ body {
     margin: 0 auto;
     padding: 0 32px;
 }
+/*HEADER*/
+
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -112,4 +114,48 @@ a:hover {
 
 .about-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+.about-left {
+    flex:1;
+    
+}
+.about-right {
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.about-right img {
+    width: 100%;
+    
+}
+.about-right .card {
+    border: 1px solid #00cc33;
+    max-width: 300px;
+    border-radius: 8px;
+}
+.card-content {
+    text-align: center;
+    padding: 0;
+}
+.card-content h3 {
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.line {
+ height: 1px;
+ background-color: #00cc33;
+ border: none;
+ width: 70%;
+ margin: auto;
+}
+.social-icons {
+    margin: 10px;
 }
