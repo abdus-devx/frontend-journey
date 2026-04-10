@@ -1,12 +1,12 @@
 body {
     background: black;
-    color: white;
+    color: beige;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 32px;
+    padding: 0 32px;
 }
 .header-inner {
     display: flex;
@@ -46,7 +46,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: beige;
     padding: 5px;
 }
 a:hover {
@@ -78,7 +78,7 @@ a:hover {
     margin: 16px 0 24px;
 }
 
-button {
+.hero-left a {
     background-color: #00FF41;
     color: black;
     border: none;
@@ -88,7 +88,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.hero-left a:hover {
     background-color: #00cc33;
 }
 .imgs-hero {
@@ -97,7 +97,7 @@ button:hover {
 .img-hero {
     width: 100%;
     max-width: 400px;
-    filter: drop-shadow(0 0 10px #00ff41);
+    filter: drop-shadow(0 0 8px #00ff41);
 }
 .circle {
     width: 500px;
@@ -106,6 +106,10 @@ button:hover {
     border-radius: 50%;
     position:absolute;
     z-index: -1;
-    top: 346px;
+    top: 250px;
 
+}
+
+.about-wrapper {
+    display: flex;
 }
