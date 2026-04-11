@@ -57,6 +57,7 @@ a:hover {
     transition: 0.5ms;
     border-radius: 5px;
     padding: 5px;
+    transition: 0.3s;
 }
 
 .hero {
@@ -64,13 +65,15 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 16px;
-    padding: 60px 0;
+    padding: 0 80px;
+    height: 100vh;
 }
 .hero-left {
     max-width: 600px;
 }
 .hero-left h1 {
  font-size: 62px;
+ line-height: 1;
 }
 .hero-left h2 {
  font-size: 42px;
@@ -80,7 +83,7 @@ a:hover {
     margin: 16px 0 24px;
 }
 
-.hero-left a {
+.a-btn {
     background-color: #00FF41;
     color: black;
     border: none;
@@ -88,10 +91,19 @@ a:hover {
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.hero-left a:hover {
+.a-btn:hover {
     background-color: #00cc33;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .imgs-hero {
  position:relative ;
@@ -99,7 +111,7 @@ a:hover {
 .img-hero {
     width: 100%;
     max-width: 400px;
-    filter: drop-shadow(0 0 8px #00ff41);
+    filter: drop-shadow(0 0 5px #00ff88);
 }
 .circle {
     width: 500px;
@@ -108,7 +120,7 @@ a:hover {
     border-radius: 50%;
     position:absolute;
     z-index: -1;
-    top: 250px;
+    top: 345px;
 
 }
 
@@ -116,26 +128,31 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 
+}
+.about-right {
+    flex:2;
+    
 }
 .about-left {
     flex:1;
-    
-}
-.about-right {
-    flex:1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
-.about-right img {
+.about-left img {
     width: 100%;
     
 }
-.about-right .card {
+.about-left .card {
     border: 1px solid #00cc33;
     max-width: 300px;
     border-radius: 8px;
+    transition: 0.3s;
+}
+.about-left .card:hover {
+  box-shadow: 0 0 20px rgba(0, 204, 51, 0.6);
 }
 .card-content {
     text-align: center;
@@ -153,9 +170,12 @@ a:hover {
  height: 1px;
  background-color: #00cc33;
  border: none;
- width: 70%;
+ width: 100%;
  margin: auto;
 }
 .social-icons {
-    margin: 10px;
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+    justify-content: center;
 }
