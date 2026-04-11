@@ -125,7 +125,7 @@ a:hover {
 
 }
 
-.about-wrapper {
+.about {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,13 +146,13 @@ a:hover {
     width: 100%;
     
 }
-.about-left .card {
+.about-left .aboutcard {
     border: 1px solid #00cc33;
     max-width: 300px;
     border-radius: 8px;
     transition: 0.3s;
 }
-.about-left .card:hover {
+.about-left .aboutcard:hover {
   box-shadow: 0 0 20px rgba(0, 204, 51, 0.6);
 }
 .card-content {
