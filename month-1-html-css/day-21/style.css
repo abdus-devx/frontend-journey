@@ -3,11 +3,13 @@ body {
     color: beige;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
 }
+
 /*HEADER*/
 
 .header-inner {
@@ -15,14 +17,16 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
-    
+
 }
+
 .brand {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2px;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -35,7 +39,7 @@ body {
     font-weight: bold;
     border-style: hidden;
     font-size: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-list {
@@ -51,6 +55,7 @@ a {
     color: beige;
     padding: 5px;
 }
+
 a:hover {
     background-color: #00FF41;
     color: black;
@@ -59,7 +64,15 @@ a:hover {
     padding: 5px;
     transition: 0.3s;
 }
+/* MAIN GLOBAL */
+section {
+    margin-bottom: 80px;
+}
+html {
+    scroll-behavior: smooth;
+}
 
+/* HERO SECTION */
 .hero {
     display: flex;
     justify-content: space-around;
@@ -68,17 +81,21 @@ a:hover {
     padding: 0 80px;
     min-height: 100dvh;
 }
+
 .hero-left {
     max-width: 600px;
 }
+
 .hero-left h1 {
- font-size: 62px;
- line-height: 1;
+    font-size: 62px;
+    line-height: 1;
 }
+
 .hero-left h2 {
- font-size: 42px;
- color: #00FF41;
+    font-size: 42px;
+    color: #00FF41;
 }
+
 .hero-left p {
     margin: 16px 0 24px;
 }
@@ -105,26 +122,29 @@ a:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
 .imgs-hero {
- position:relative ;
+    position: relative;
 }
+
 .img-hero {
     width: 100%;
     max-width: 400px;
     filter: drop-shadow(0 0 5px #00ff88);
-    position:relative;
+    position: relative;
 }
+
 .circle {
     width: 500px;
     height: 500px;
     background-color: beige;
     border-radius: 50%;
-    position:absolute;
+    position: absolute;
     z-index: -1;
     top: 345px;
-
 }
 
+/* ABOUT SECTION*/
 .about {
     display: flex;
     justify-content: space-between;
@@ -132,48 +152,56 @@ a:hover {
     gap: 20px;
 
 }
+
 .about-right {
-    flex:2;
-    
+    flex: 2;
+
 }
+
 .about-left {
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .about-left img {
     width: 100%;
-    
 }
+
 .about-left .aboutcard {
     border: 1px solid #00cc33;
     max-width: 300px;
     border-radius: 8px;
     transition: 0.3s;
 }
+
 .about-left .aboutcard:hover {
-  box-shadow: 0 0 20px rgba(0, 204, 51, 0.6);
+    box-shadow: 0 0 20px rgba(0, 204, 51, 0.6);
 }
+
 .card-content {
     text-align: center;
     padding: 0;
 }
+
 .card-content h3 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .card-content p {
-  margin-top: 0;
-  margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
+
 .line {
- height: 1px;
- background-color: #00cc33;
- border: none;
- width: 100%;
- margin: auto;
+    height: 1px;
+    background-color: #00cc33;
+    border: none;
+    width: 100%;
+    margin: auto;
 }
+
 .social-icons {
     display: flex;
     margin: 5px;
@@ -182,17 +210,64 @@ a:hover {
 }
 
 /* PROJECT SECTION */
-
 .title-project {
     text-align: center;
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .card {
     border: 1px solid #00cc33;
     padding: 0 20px;
     border-radius: 10px;
+}
+
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.contact-left {
+    flex: 1;
+    background-color: rgb(15, 15, 15);
+    padding: 20px;
+}
+
+.contact-right {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.info-item p {
+    margin: 2px 0 0;
+    font-size: 13px;
 }
