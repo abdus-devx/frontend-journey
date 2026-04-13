@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-} 
+}
 
 body {
     background: black;
@@ -69,12 +69,57 @@ a:hover {
     padding: 5px;
     transition: 0.3s;
 }
+
 /* MAIN GLOBAL */
 section {
     margin-bottom: 80px;
 }
+
 html {
     scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .hero {
+        
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .hero-left h1 {
+        font-size: 32px;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .imgs-hero {
+        width: 100%;
+    }
+
+    .img-hero {
+        width: 100%;
+        max-width: 300px;
+        max-width: unset;
+    }
 }
 
 /* HERO SECTION */
@@ -83,7 +128,7 @@ html {
     justify-content: space-around;
     align-items: center;
     gap: 16px;
-    padding: 0 80px;
+    
     min-height: 100dvh;
 }
 
@@ -240,7 +285,7 @@ html {
     border: 1px solid white;
     border-radius: 10px;
     overflow: hidden;
-    
+
 }
 
 .contact-left {
@@ -276,6 +321,7 @@ html {
     flex: 1;
     padding: 20px;
 }
+
 .contact-right form {
     display: flex;
     flex-direction: column;
@@ -287,16 +333,18 @@ html {
     width: 100%;
     padding: 6px 9px;
     border: 1px solid #ccc;
-     border-radius: 8px;
+    border-radius: 8px;
     font-size: 14px;
     font-family: inherit;
     outline: none;
     transition: 0.3s;
 }
+
 .contact-right textarea {
     min-height: 120px;
     resize: vertical;
 }
+
 .contact-right button {
     padding: 12px;
     border: none;
@@ -308,6 +356,7 @@ html {
     transition: 0.3s;
     width: 100%;
 }
-.contact-right button:hover{
+
+.contact-right button:hover {
     background-color: #00FF41;
 }
