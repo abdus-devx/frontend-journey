@@ -115,12 +115,7 @@ html {
         width: 100%;
     }
 
-    .img-hero {
-        width: 100%;
-        max-width: 300px;
-        max-width: unset;
-    }
-}
+
 
 /* HERO SECTION */
 .hero {
