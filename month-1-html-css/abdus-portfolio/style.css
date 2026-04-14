@@ -125,7 +125,9 @@ html {
         list-style: none;
         padding: 0;
     }
-
+    .contact {
+        flex-direction: column;
+    }
 
 /* HERO SECTION */
 .hero {
