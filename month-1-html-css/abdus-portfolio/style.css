@@ -71,18 +71,18 @@ body {
     padding: 32px 16px;
 }
 
-a {
+.nav-list a {
     text-decoration: none;
     color: beige;
     padding: 5px;
+    transition: 0.3s;
 }
 
-a:hover {
+.nav-list a:hover {
     background-color: #00FF41;
     color: black;
     border-radius: 5px;
-    padding: 5px;
-    transition: 0.3s;
+    
 }
 
 /* MAIN GLOBAL */
@@ -127,7 +127,6 @@ html {
     justify-content: space-around;
     align-items: center;
     gap: 16px;
-
     min-height: 100dvh;
 }
 
@@ -141,28 +140,12 @@ html {
     line-height: 1;
 }
 
-.hero-left h2 {
+.hero-left .section-title{
     font-size: 42px;
     color: #00FF41;
-    display: inline-block;
-    position: relative;
 }
-.hero-left h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
+.hero-left .section-title::after {
     background: white;
-    border-radius: 2px;
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-.hero-left h2:hover::after {
-    transform: scaleX(1);
 }
 
 .hero-left p {
@@ -179,17 +162,15 @@ html {
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 .a-btn:hover {
     background-color: #00cc33;
-    color: black;
-    border: none;
-    padding: 12px 24px;
     border-radius: 6px;
-    font-weight: 600;
     transform: scale(1.05);
-    transition: 0.3s;
+    
 }
 
 .imgs-hero {
@@ -204,13 +185,15 @@ html {
 }
 
 .circle {
+    position: absolute;
     width: 500px;
     height: 500px;
     background-color: beige;
     border-radius: 50%;
-    position: absolute;
     z-index: -1;
-    top: 315px;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -22%);
 }
 
 /* SKILLS SECTION*/
@@ -295,6 +278,17 @@ html {
     margin: 5px;
     gap: 20px;
     justify-content: center;
+    font-size: 24px;
+}
+
+.social-icons i {
+    color: #9CA3AF; 
+}
+.social-icons i:hover {
+    color:#00FF41; 
+}
+.social-media .social-icons {
+    justify-content: flex-start;
 }
 
 /* PROJECT SECTION */
@@ -355,6 +349,9 @@ html {
     margin: 2px 0 0;
     font-size: 13px;
 }
+.info-item i{
+    font-size: 24px;
+}
 
 .contact-right {
     flex: 1;
@@ -399,7 +396,10 @@ html {
 .contact-right button:hover {
     background-color: #00FF41;
 }
-
+.footer {
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-width: 768px) {
     .header-inner {
@@ -471,7 +471,6 @@ html {
     }
 
     .social-media h5 {
-        text-align: center;
         margin-bottom: 10px;
     }
 }
