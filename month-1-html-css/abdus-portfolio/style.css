@@ -17,9 +17,11 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -82,7 +84,7 @@ body {
     background-color: #00FF41;
     color: black;
     border-radius: 5px;
-    
+
 }
 
 /* MAIN GLOBAL */
@@ -140,10 +142,12 @@ html {
     line-height: 1;
 }
 
-.hero-left .section-title{
+.hero-left .section-title {
     font-size: 42px;
     color: #00FF41;
+    margin-bottom: 5px;
 }
+
 .hero-left .section-title::after {
     background: white;
 }
@@ -170,7 +174,7 @@ html {
     background-color: #00cc33;
     border-radius: 6px;
     transform: scale(1.05);
-    
+
 }
 
 .imgs-hero {
@@ -282,11 +286,13 @@ html {
 }
 
 .social-icons i {
-    color: #9CA3AF; 
+    color: #9CA3AF;
 }
+
 .social-icons i:hover {
-    color:#00FF41; 
+    color: #00FF41;
 }
+
 .social-media .social-icons {
     justify-content: flex-start;
 }
@@ -349,7 +355,8 @@ html {
     margin: 2px 0 0;
     font-size: 13px;
 }
-.info-item i{
+
+.info-item i {
     font-size: 24px;
 }
 
@@ -396,6 +403,7 @@ html {
 .contact-right button:hover {
     background-color: #00FF41;
 }
+
 .footer {
     display: flex;
     justify-content: center;
@@ -425,6 +433,10 @@ html {
     }
 
     .hero-left h1 {
+        font-size: 42px;
+    }
+
+    .hero-left .section-title {
         font-size: 32px;
     }
 
@@ -439,14 +451,14 @@ html {
     }
 
     .skills-list {
-        
+
         gap: 5px;
         padding: 0;
     }
 
     .skills-list i {
         font-size: 60px;
-        
+
     }
 
     .skills-list i:hover {
