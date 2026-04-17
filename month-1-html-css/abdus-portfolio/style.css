@@ -101,7 +101,7 @@ html {
     position: relative;
     display: inline-block;
     color: white;
-
+    
 }
 
 .section-title::after {
@@ -224,13 +224,16 @@ html {
 .about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     gap: 20px;
 
 }
 
 .about-right {
     flex: 2;
+}
+.about-right p {
+    margin-top: 0;
 }
 
 .about-left {
@@ -471,6 +474,9 @@ html {
 
     .about-right {
         text-align: center;
+    }
+    .about-left {
+        justify-content: center;
     }
 
     .about-right ul {
