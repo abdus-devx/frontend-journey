@@ -315,20 +315,29 @@ html {
     border: 1px solid #00cc33;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .card-body {
+    flex: 1;
     padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
 }
-
+.card-content p{
+    flex: 1;
+    font-size: 15px;
+}
 .card-img {
     height: 250px;
     
 }
 .card-img img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
 }
+
 .tech-stack {
     margin-bottom: 20px;
 }
@@ -352,12 +361,42 @@ html {
     color: #000000;
     border-radius: 6px;
     padding: 12px;
+    transition: 0.3s ease;
 }
 .card-links a:hover {
     cursor: pointer;
     background-color: #001a0f;
     color: white;
 }
+
+.img-soon {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: #00cc33 1px dotted;
+}
+.img-soon span {
+    font-weight: 900;
+    font-size: 32px;
+    background-image: linear-gradient(to right,#ffa908,#000000,#ffffff,#ffd001);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: shimmerText 5s ease infinite;
+}
+@keyframes shimmerText {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
 /* CONTACT SECTION */
 .contact {
     display: flex;
