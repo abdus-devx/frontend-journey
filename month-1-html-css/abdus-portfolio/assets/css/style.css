@@ -102,7 +102,7 @@ html {
     position: relative;
     display: inline-block;
     color: white;
-    
+
 }
 
 .section-title::after {
@@ -225,7 +225,7 @@ html {
 .about {
     display: flex;
     justify-content: space-between;
-    
+
     gap: 20px;
 
 }
@@ -233,12 +233,15 @@ html {
 .about-right {
     flex: 2;
 }
+
 .about-right p {
     margin-top: 0;
 }
-.about-list{
+
+.about-list {
     list-style: none;
 }
+
 .about-left {
     flex: 1;
     display: flex;
@@ -309,9 +312,11 @@ html {
 }
 
 .cards {
+    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+
 }
 
 .card {
@@ -321,20 +326,24 @@ html {
     display: flex;
     flex-direction: column;
 }
+
 .card-body {
     flex: 1;
     padding: 0 20px 20px;
     display: flex;
     flex-direction: column;
 }
-.card-content p{
+
+.card-content p {
     flex: 1;
     font-size: 15px;
 }
+
 .card-img {
     height: 250px;
-    
+
 }
+
 .card-img img {
     width: 100%;
     height: 100%;
@@ -344,28 +353,34 @@ html {
 .tech-stack {
     margin-bottom: 20px;
 }
-.tech-stack, .card-links {
+
+.tech-stack,
+.card-links {
     display: flex;
     justify-content: center;
     gap: 10px;
 
 }
-.tech-stack span, .card-links a {
-    background-color:#9CA3AF;
+
+.tech-stack span,
+.card-links a {
+    background-color: #9CA3AF;
     border-radius: 12px;
     color: #001a0f;
     padding: 8px;
     font-weight: 600;
     box-shadow: #000000;
 }
+
 .card-links a {
     text-decoration: none;
     background-color: #00FF41;
     color: #000000;
     border-radius: 6px;
-    padding: 12px;
+    padding: 6px;
     transition: 0.3s ease;
 }
+
 .card-links a:hover {
     cursor: pointer;
     background-color: #001a0f;
@@ -379,27 +394,31 @@ html {
     justify-content: center;
     border-bottom: #00cc33 1px dotted;
 }
+
 .img-soon span {
     font-weight: 900;
     font-size: 32px;
-    background-image: linear-gradient(to right,#ffa908,#000000,#ffffff,#ffd001);
+    background-image: linear-gradient(to right, #ffa908, #000000, #ffffff, #ffd001);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
     animation: shimmerText 5s ease infinite;
 }
+
 @keyframes shimmerText {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%
-        }
+    0% {
+        background-position: 0% 50%;
     }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
 
 /* CONTACT SECTION */
 .contact {
@@ -490,6 +509,22 @@ html {
     background-color: #00FF41;
 }
 
+.a-phone {
+    text-decoration: none;
+    color: white;
+
+    padding: 2px;
+    font-style: italic;
+    transition: 0.3s ease;
+}
+
+.a-phone:hover {
+    background-color: #00cc33;
+
+    border-radius: 4px;
+    color: #000000;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -558,6 +593,7 @@ html {
     .about-right {
         text-align: center;
     }
+
     .about-left {
         justify-content: center;
     }
