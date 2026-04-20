@@ -135,18 +135,17 @@ html {
 
 .hero-left {
     max-width: 600px;
-
 }
 
 .hero-left h1 {
-    font-size: 62px;
+    font-size: 59px;
     line-height: 1;
 }
 
 .hero-left .section-title {
     font-size: 42px;
     color: #00FF41;
-    margin-bottom: 5px;
+    margin: 5px auto;
 }
 
 .hero-left .section-title::after {
