@@ -15,7 +15,9 @@
     <div id="submitOverlay" class="overlay"></div>
     <div id="submitPopup" class="popup">
         <p>All set! Your message has been delivered</p>
-        <button>X</button>
+        <button class="closeBtn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
     <header>
         <div class="container">
@@ -41,7 +43,7 @@
                 <div class="hero">
                     <div class="hero-left">
                         <h1>Frontend Developer specializing in modern, responsive web interfaces</h1>
-                        <h2 class="section-title">Hi, I'am Abdus Solihin</h2>
+                        <h2 class="section-title">Hi, I'm Abdus Solihin</h2>
                         <p>Ready to collaborate with global teams remotely</p>
                         <a class="a-btn" href="#projects">View My Work</a>
                     </div>
@@ -284,13 +286,10 @@
             e.preventDefault();
 
             const data = Object.fromEntries(new FormData(form));
-            console.log(data);
-
+            
             form.reset();
             popup.classList.add("show");
             overlay.classList.add("show");
-            
-
         });
 
 

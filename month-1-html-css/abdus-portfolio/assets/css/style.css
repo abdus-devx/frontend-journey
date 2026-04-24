@@ -63,7 +63,7 @@ body {
 .popup.show {
     display: block;
 }
-.popup button {
+.closeBtn {
     position: absolute;
     top: 2px;
     right: 2px;
@@ -71,7 +71,7 @@ body {
     border: none;
     transition: 0.3s ease;
 }
-.popup button:hover {
+.closeBtn:hover {
     background-color: #00cc33;
     cursor: pointer;
 
@@ -650,5 +650,11 @@ html {
 
     .social-media h5 {
         margin-bottom: 10px;
+    }
+    .popup {
+        padding: 10px;
+    }
+    .popup p{
+        text-align: center;
     }
 }
