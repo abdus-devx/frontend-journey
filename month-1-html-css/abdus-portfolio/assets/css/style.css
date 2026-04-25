@@ -29,10 +29,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 32px;
 }
+
 /*POPUP*/
 .overlay {
     display: none;
@@ -44,10 +45,12 @@ body {
     background: rgba(0, 0, 0, 0.9);
     z-index: 1;
 }
+
 .overlay.show {
     display: block;
-    
+
 }
+
 .popup {
     display: none;
     position: fixed;
@@ -60,9 +63,11 @@ body {
     z-index: 2;
     background-color: #001a0f;
 }
+
 .popup.show {
     display: block;
 }
+
 .closeBtn {
     position: absolute;
     top: 2px;
@@ -71,6 +76,7 @@ body {
     border: none;
     transition: 0.3s ease;
 }
+
 .closeBtn:hover {
     background-color: #00cc33;
     cursor: pointer;
@@ -243,12 +249,20 @@ html {
 }
 
 /* SKILLS SECTION*/
+.skills {
+    text-align: center;
+}
+
+.skills .section-title {
+    margin-bottom: 70px;
+}
 
 .skills-list {
     list-style: none;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+
 }
 
 .skills-list i {
@@ -612,6 +626,10 @@ html {
         width: 100%;
     }
 
+    .skills .section-title {
+        margin-bottom: 30px;
+    }
+
     .skills-list {
 
         gap: 5px;
@@ -651,10 +669,12 @@ html {
     .social-media h5 {
         margin-bottom: 10px;
     }
+
     .popup {
         padding: 10px;
     }
-    .popup p{
+
+    .popup p {
         text-align: center;
     }
 }
