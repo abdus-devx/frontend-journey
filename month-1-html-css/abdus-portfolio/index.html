@@ -273,37 +273,43 @@
             </div>
         </section>
     </main>
-    <footer class="container">
-        <div class="footer">
-            <div class="foot-about">
-                <h4>Abdus devx</h4>
-                <p>Front-End Developer focused on building modern, responsive, and user-friendly web experiences</p>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="foot-about">
+                    <h4>Abdus devx</h4>
+                    <p>Front-End Developer focused on building modern, responsive, and user-friendly web experiences</p>
+                </div>
+                <div class="foot-links">
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="foot-contact">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><a href="mailto:misterabdus@gmail.com"><i class="fa-regular fa-envelope"></i>Email</a></li>
+                        <li><a href="https://bit.ly/4cHXh8U" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="foot-social">
+                    <h4>Follow Me</h4>
+                    <ul>
+                        <li><a href="https://github.com/abdus-devx"><i class="fa-brands fa-github"></i>Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/abdussolihin/"><i
+                                class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="foot-links">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="foot-contact">
-                <ul>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
-                </ul>
-            </div>
-            <div class="foot-social">
-                <ul>
-                    <li><i class="fa-brands fa-github"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-            </div>
-            <div class="line"></div>
-            <p>© 2026 AbdusSite. All rights reserved.</p>
         </div>
     </footer>
+    <div class="line"></div>
+    <p class="copyright">© 2026 Abdus. Built with passion</p>
     <script>
         const form = document.getElementById("contactForm")
         const popup = document.getElementById("submitPopup");
@@ -313,7 +319,7 @@
             e.preventDefault();
 
             const data = Object.fromEntries(new FormData(form));
-            
+
             form.reset();
             popup.classList.add("show");
             overlay.classList.add("show");

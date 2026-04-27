@@ -581,8 +581,34 @@ html {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer a {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    color: #9CA3AF;
+    font-size: 14px;
+}
+.footer a:hover {
+    color: #00cc33;
+}
+.footer h4{
+    margin-bottom: 0;
+}
+
+.copyright {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -676,5 +702,9 @@ html {
 
     .popup p {
         text-align: center;
+    }
+    .footer {
+        justify-items: flex-start;
+        
     }
 }
